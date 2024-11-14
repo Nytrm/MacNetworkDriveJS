@@ -70,7 +70,7 @@ const macNetworkDrive = {
     /* parametetr localPath is unused -> allow to have the same signature */
     let completePromise = new Promise((resolve, reject) => {
 
-      let test = macNetworkDrive.find(drivePath).then(result => {
+      macNetworkDrive.find(drivePath).then(result => {
         if (result !== undefined) {
           resolve(result)
         } else {
